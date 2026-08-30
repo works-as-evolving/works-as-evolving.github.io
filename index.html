@@ -43,13 +43,18 @@
 
 <p>The concept, avatar and profile page evolved from a conversation with Microsoft Copilot.</p>
 
-<p><img src="/assets/avatar.svg" alt="avatar" style="transition: transform 120s; transform: rotate(90turn); background: transparent;"></p>
+<p><img src="/assets/avatar.svg" alt="avatar" style="transition: transform 120s; transform: rotate(0turn); background: transparent;"></p>
 
 
       
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
+    <script>
+        setTimeout(() => {
+            document.querySelector('img').style.transform = 'transform: rotate(90turn)';
+        }, 1000);
+    </script>
   
 
 </body>
